@@ -211,3 +211,22 @@ nextBtn.addEventListener("click", () => {
     }
 });
 
+let restartBtn = document.querySelector(".restart-btn");
+
+restartBtn.addEventListener("click", () => {
+  currentQuestionIndex = 0;
+
+  score = {
+    introvert: 0,
+    leader: 0,
+    creative: 0,
+    logical: 0
+  };
+
+  selectedType = null;
+
+  resultSection.style.display = "none";
+  startSecction.style.display  = "flex";
+
+  showQuestion();
+});
