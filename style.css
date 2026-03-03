@@ -21,7 +21,6 @@ body{
     flex-direction: column;
     gap: 50px;
     letter-spacing: 2px;
-    /* display: none; */
 }
 
 .start-section .start-btn{
@@ -32,7 +31,7 @@ body{
     color: white;
     font-size: 20px;
 }
-.start-btn:hover{
+.start-btn:active{
     background: #fff;
     color: black;
 }
@@ -57,6 +56,29 @@ body{
 .question-text{
     padding: 30px 5px;
 }
+
+.options{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.options button{
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+.options button:hover {
+    background-color: #f0f0f0;
+    transform: scale(1.03);
+}
+
+.options button.active {
+    background-color: #000000;
+    color: white;
+}
 .next-btn{
      width: 100px;
     height: 30px;
@@ -64,6 +86,7 @@ body{
     background: #000;
     color: white;
     font-size: 15px;
+    margin-top: 20px
 }
 
 .result-section{
